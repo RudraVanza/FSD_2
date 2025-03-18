@@ -1,0 +1,32 @@
+JSON Objects
+{
+    "Company name":"C1",
+    "Company Contact" : {
+        "Phone":"123-123",
+        "email":"rudra@gmail.com"
+    }
+    "Employee":[
+        {
+            "d1":"101",
+            "name":"abc",
+            "Contacts":["Em@gmail.com","Em2@gmail.com"]
+        },
+        {
+            "id":"102",
+            "name":"DEF",
+            "Contact":null
+        }
+    ]
+}
+
+JSON DataType
+1>String    {"Name":"Rudra"}
+2>Number    {"Age":19}
+3>object(JSON Object)   {"employee":{"name":"abc","age":19}}
+4>array     {"employee":["Abc","def","ghi"]"}
+5>Boolean   {"seles":true}
+6>null      {"middle name":null}
+
+JSON inbuilt Function
+1>JSON.parse()
+2>JSON.Stringify()
