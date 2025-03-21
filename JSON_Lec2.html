@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JSON</title>
+    </head>
+<body>
+    <!-- Function Calling -->
+    <!-- <p id="demo"></p>
+    <button onclick="call()">Click ME</button> -->
+
+    <script>
+        // const a = {
+        //     "name":"Tree",
+        //     "course":"Intro",
+        //     "contant":["1","2","3"]
+        // }
+        // console.log(a.course);
+        // console.log(a.contant);
+        // console.log(a.contant[1]);
+
+
+        // const user = {
+        //     "name" : ["ABC","DEF","GHI"],
+        //     "age" : "28",
+        //     "subject" : ["FSD-1","FSD-2","COA"],
+        //     "address" : ["T1","T2",{"T3":"GiveAgain"}] 
+        // }
+        // console.log(user.address[2].T3);  //To print GiveAgain
+        // console.log(user.mname); //Undifine because mname is not defined in this object
+
+
+        // Aim:- Write One JSON Script with the date propertity yyyy-mm-dd and print the date in IST 
+        // const obj = {"name":"xyz","age":"17","dob":"1997-03-14"};
+        // z = JSON.parse(obj)
+        // console.log(obj.dob);
+        // a= new Date(obj.dob);
+        // console.log("Date = "+a)
+        // // OR
+        // const obj = '{"name":"xyz","age":"17","dob":"1997-03-14"}'
+        // z = JSON.parse(obj)
+        // console.log(z.dob);
+        // a= new Date(z.dob);
+        // console.log("Date = "+a)
+
+
+        // Function Calling
+        // function call(){
+        //     const obj = JSON.parse('{"name":"xyz","age":"17","dob":"1997-03-14"}');
+        //     date = new Date(obj.dob);
+        //     document.getElementById("demo").innerHTML = date;
+        // }
+        
+
+        // Fatch Value using loop (for...in/for...of)
+        // const sub={
+        //     "FSD":[
+        //         {
+        //             "Topic":"HTML",
+        //             "cource":"Beginer",
+        //             "content":["tags","table","form"]
+        //         },
+        //         {
+        //             "Topic":"css",
+        //             "cource":"Beginer",
+        //             "contant":["tags","table","form"]
+        //         }
+        //     ]
+        // }
+        // console.log("//Using for...in loop");
+        // // for...in using for index
+        // for(x in sub.FSD){
+        //     for(y in sub.FSD[x]){
+        //        console.log(sub.FSD[x][y]+"")
+        //     }
+        // }  
+        // console.log("")
+        // console.log("//Using for...of loop");
+        // // for...of using for values
+        // for(x1 of sub.FSD){
+        //     console.log(x1.Topic+"")
+        //     console.log(x1.cource+"")
+        // }      
+
+        
+        //Aim :- Write a JSON Obj which contains array of 3 obj each obj contains 2 properties name and age, now short an array values by age in decenting order
+        // const student = [
+        //     {
+        //         "name":"Rudra",
+        //         "age":"20"
+        //     },
+        //     {
+        //         "name":"Rahul",
+        //         "age":"25"
+        //     },
+        //     {
+        //         "name":"Rahil",
+        //         "age":"16"
+        //     }
+        // ]
+        // console.log(student.sort((a,b)=>b.age-a.age))
+
+
+        // Aim :- Write a function name firstLast , It takes an array and return and object with the below condition 1>the first element of an array must be obj's key and last element of an array must be key's value
+        // Inputes : ["abc","def","ghi"]
+        // output : {"abc":"ghi"}
+        // function firstLast(a) {
+        //     var temp = {};
+        //     temp[a[0]] = a[a.length - 1];     //We add a key-value pair to temp: temp["abc"] = "ghi"
+        //     return temp;
+        // }
+        // var data = ["abc","def","ghi"]
+        // console.log(firstLast(data))
+
+
+        // Aim : Write js store a array of obj having highest and display it
+        // const person=[
+        //     {"name":"NAS","height":"5.2"},
+        //     {"name":"BEF","height":"5.5"},
+        //     {"name":"XYZ","height":"6.0"}
+        // ];
+        // function getHighest(person) {
+        //     return Math.max(...person.map(obj=>obj.height)); // .map = Create new array containing heighr values , ... (Spread operator)= spread the array into individual values
+        // }
+        // console.log("Highest Height is : "+getHighest(person))
+
+
+        const a ={
+            "A":"LJU",
+            "B":["CST","IT","CE"],
+            "C":[
+                {
+                    "D":"Hi",
+                    "E":["are",4,{
+                            "f":["sem","we"]
+                        }
+                    ]
+                }
+            ],
+            "G":{
+                "H":"Student",
+                "I":["of","!"]
+            },
+            "J":[
+                {
+                    "K":"Python",
+                    "L":"Branch"
+                },
+                "FSD-2"
+            ]
+        }
+        // Output :- Hi! we are student of sem 4 of cst branch
+        console.log(a.C[0].D , a.G.I[1] , a.C[0].E[2].f[1] , a.C[0].E[0] , a.G.H , a.G.I[0] , a.C[0].E[2].f[0] , a.C[0].E[1] ,
+    </script>
+</body>
+</html>
