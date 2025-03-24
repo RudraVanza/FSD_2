@@ -6,6 +6,13 @@
 // 5. rename that file.
 // 6.delete that file.
 
+// 1
 var ps=require("fs");
 // ps.mkdirSync("node");
+
+// 2
 ps.writeFileSync("node/write.txt","Hello");
+
+// 3
+janaam@ljeng.mail.ku4
+janaam11102005@gmail.com
