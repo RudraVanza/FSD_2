@@ -54,10 +54,13 @@
         function add(a,b) {
             let obj = document.getElementById('id');
             obj.innerHTML=(a+b);
+            if (a > 10) {
+                clearInterval(intervalId);
+            }
         }
         let a = 2;
         let b = 5;
-        setInterval(function(){add(++a,++b)},1000);
+        let intervalId =setInterval(function(){add(++a,++b)},1000);
     </script>
  </body>
  </html>
