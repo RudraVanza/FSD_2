@@ -1,0 +1,63 @@
+<!-- Aim :- Display the contant on browser after 5 second -->
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <p id = "id"></p>
+    <script>
+        setTimeout(myfun,5000);
+        function myfun() {
+            document.getElementById("id").innerHTML="Rudra Vanza";
+        }
+    </script>
+ </body>
+ </html> -->
+
+<!--Aim :- Display additon of 2 numbers on broweser using call function-->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="id"></p>
+    <script>
+        function mydisplay(sum) {
+            document.getElementById('id').innerHTML = sum;
+        }
+        function mycal(num1,num2,mycallback) {
+            sum = num1+num2;
+            mycallback(sum);
+        }
+        mycal(15,4,mydisplay)
+    </script>
+</body>
+</html> -->
+
+<!-- Aim:- Initilize 2 var and increment both var and display the addition of both var interval of 1 second -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <p id="id"></p>
+    <script>
+        function add(a,b) {
+            let obj = document.getElementById('id');
+            obj.innerHTML=(a+b);
+        }
+        let a = 2;
+        let b = 5;
+        setInterval(function(){add(++a,++b)},1000);
+    </script>
+ </body>
+ </html>
