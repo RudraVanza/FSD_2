@@ -1,0 +1,36 @@
+mkdir express  --> Make Folder name express
+cd Express
+npm init    
+
+// Cmd will show
+package name: (express) First App
+Sorry, name can only contain URL-friendly characters and name can no longer contain capital letters.
+package name: (express) firstapp
+version: (1.0.0) 1.0.0
+description:
+entry point: (index.js)
+test command:
+git repository:
+keywords:
+author: RudraVanza
+license: (ISC)
+About to write to D:\FSD_II\Express\package.json:
+
+{
+  "name": "firstapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "RudraVanza",
+  "license": "ISC"
+}
+
+
+Is this OK? (yes) yes
+
+jaruri nathi --> npm config set proxy http://192.168.10.252:808
+npm install express
+npm list express
