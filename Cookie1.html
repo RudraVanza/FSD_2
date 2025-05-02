@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: cadetblue;">
+    <!-- // Aim 1> Create one html file It includs oun form which contains fname ,lname ,pass & submit button 2> Once form issubmited it stored all the entered cookies to the respected cookies to the next page the redirect user to admin page andclear the cookies set for the lname.display remaining set of cookies of values of this page using post method -->
+    <!-- <form action="/next" method="post">
+        First Name :- <input type="text" name="fname"><br><br>
+        Last Name :- <input type="text" name="lname"><br><br>
+        Password :- <input type="password" name="password"><br><br>
+        <button name="submit" value="submit">Submit</button>
+    </form> -->
+
+    <!--Aim 2> Create a form with name , email , messages , and reating (sed , avg , good , execalent) -->
+    <form action="/submit-feed" method="post" style="color: aliceblue;">
+        Name :- <input type="text" name="name" ><br><br>
+        Email :- <input type="text" name="email"><br><br>
+        Messages :- <textarea name="messages" placeholder="Give Your Messages Here!!!!" cols="100" rows="10"></textarea><br><br>
+        <label for="rating">Rating : </label>
+        <input type="radio" name="rating" id="rating1" value="poor" required>
+        <label for="rating1">POOR </label>
+        <input type="radio" name="rating" id="rating2" value="sad" required>
+        <label for="rating2">SAD </label>
+        <input type="radio" id="rating3" name="rating" value="good" required>
+        <label for="rating3">GOOD</label>
+        <input type="radio" name="rating" value="execalent" id="rating4" required>
+        <label for="rating4">Execalent</label><br><br>
+        <button value="submit" name="submit">Submit</button>
+    </form>
+</body>
+</html>
