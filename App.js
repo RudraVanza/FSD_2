@@ -1,7 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
 // import Map1 from './Chap_7_MAP_1'
-import Map2 from './Chap_7_MAP_2'
+// import Map2 from './Chap_7_MAP_2'
+// import Map3 from './Chap_7_MAP_3'
+// import Map4 from './Map4'
+// import Map5 from './Map5'
+// import List1 from './List1'
+// import Filter1 from './Chap_7_Filter_1'
+// import Filter2 from './Chap_7_Filter_2'
+// import Child from './Chap_7_Parent_1_Prop'
+// import Car from './Chap_7_Parent_2_Prop'
+// import Product from './Chap_7_ProductList'
+import Main from "./Router/Chap_6_Rout_Main"
+
 function App() {
   return (
     <div className="App">
@@ -20,9 +31,19 @@ function App() {
         </a>
       </header>
       {/* <div><Map1 className='map'></Map1></div> */}
-      <div><Map2 className = 'map'></Map2></div>
+      {/* <div><Map2></Map2></div>
+      <div><Map3></Map3></div>
+      <div><Map4></Map4></div>
+      <div><Map5></Map5></div>
+      <div><List1></List1></div>
+      <div><Filter1></Filter1></div>
+      <div><Filter2></Filter2></div>
+      <div><Child></Child></div>
+      <div><Car></Car></div>
+      <div><Product></Product></div> */}
+      <div><Main/></div>
     </div>
-  );
+  )
 }
 
 export default App;
