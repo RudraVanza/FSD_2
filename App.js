@@ -11,8 +11,14 @@ import './App.css';
 // import Child from './Chap_7_Parent_1_Prop'
 // import Car from './Chap_7_Parent_2_Prop'
 // import Product from './Chap_7_ProductList'
-import Main from "./Router/Chap_6_Rout_Main"
-
+// import Main from "./Router/Chap_6_Rout_Main"
+// import UseState from './Chap_7_UseState_1';
+// import UseState2 from './Chap_7_UseState_2';
+import UseState4 from "./Chap_7_UseState_4"
+import UseState5 from "./Chap_7_UseState_5"
+import UseState6 from "./Chap_7_UseState_6"
+import UseReducer1 from "./Chap_7_UseReducer_1"
+import UseReducer2 from "./Chap_7_UseReducer_2"
 function App() {
   return (
     <div className="App">
@@ -41,9 +47,15 @@ function App() {
       <div><Child></Child></div>
       <div><Car></Car></div>
       <div><Product></Product></div> */}
-      <div><Main/></div>
+      {/* <div><Main /></div> */}
+      {/* <UseState /><br></br>
+      <UseState2 /> */}
+      <UseState4/>
+      <UseState5 />
+      <UseState6 />
+      <UseReducer1/>
+      <UseReducer2/>
     </div>
   )
 }
-
 export default App;
